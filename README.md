@@ -221,11 +221,20 @@ A tabela acima apresenta o RMSE médio e o desvio padrão dos melhores modelos c
 
 Também fizemos mapas que mostram os indicadores reais e os preditos para todos os municípios do conjunto de teste (do estado do Ceará).
 
-Imagem com valores reais (esquerda) e preditos (direita) para o baixo peso para a altura
-![alt-text-1](imgs/peso_altura_real.png) ![alt-text-2](imgs/peso_altura_pred.png)
+<p align="center">
+  <b>Imagem com valores reais (esquerda) e preditos (direita) para o baixo peso para a altura</b><br>
+  <img src="imgs/peso_altura_real.png" alt="Valores Reais - Baixo Peso para Altura" width="400"/>
+  <img src="imgs/peso_altura_pred.png" alt="Valores Preditos - Baixo Peso para Altura" width="400"/>
+</p>
 
-Imagem com valores reais (esquerda) e preditos (direita) para a baixa estatura para a idade
-![alt-text-1](imgs/altura_idade_real.png) ![alt-text-2](imgs/altura_idade_pred.png)
+<p align="center">
+  <b>Imagem com valores reais (esquerda) e preditos (direita) para a baixa estatura para a idade</b><br>
+  <img src="imgs/altura_idade_real.png" alt="Valores Reais - Baixa Estatura para Idade" width="400"/>
+  <img src="imgs/altura_idade_pred.png" alt="Valores Preditos - Baixa Estatura para Idade" width="400"/>
+</p>
 
-Imagem com valores reais (esquerda) e preditos (direita) para o baixo peso para a idade
-![alt-text-1](imgs/peso_idade_real.png) ![alt-text-2](imgs/peso_idade_pred.png)
+<p align="center">
+  <b>Imagem com valores reais (esquerda) e preditos (direita) para o baixo peso para a idade</b><br>
+  <img src="imgs/peso_idade_real.png" alt="Valores Reais - Baixo Peso para Idade" width="400"/>
+  <img src="imgs/peso_idade_pred.png" alt="Valores Preditos - Baixo Peso para Idade" width="400"/>
+</p>
