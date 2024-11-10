@@ -1,4 +1,4 @@
-# Hunger_analysis
+# Análise da fome
 
 ## Introdução
 Este estudo investiga a grave insegurança alimentar no Brasil, onde, em 2022, mais de 21 milhões de indivíduos enfrentaram a fome, resultante da falta de acesso a alimentos seguros e nutritivos. Essa condição tem um impacto adverso na saúde pública, ocasionando déficits cognitivos e atrasos no desenvolvimento de crianças. Através da aplicação de modelos de machine learning e da análise de dados socioeconômicos (CadÚnico) e de dados antropométricos (SISVAN), a pesquisa apresenta uma metodologia para a estimativa de indicadores de insegurança alimentar, contribuindo para a formulação de políticas públicas eficazes, com a possibilidade estensão das análises para níveis submunicipais, como em bairros e comunidades. Buscamos fornecer uma metodologia que oriente decisões governamentais no enfrentamento da fome.
