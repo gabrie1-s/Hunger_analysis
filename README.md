@@ -12,6 +12,11 @@ As implementações dos modelos utilizados estão no diretório `Prediction and 
 
 ## Metodologia
 
+<p align="center">
+  <b>Sumarização das etapas da metodologia proposta</b><br>
+  <img src="imgs/block_diagram.png" width="1000"/>
+</p>
+
 ### Obtensão dos dados
 Foram extraídos do [SISVAN](https://sisaps.saude.gov.br/sisvan/relatoriopublico/index) indicadores antropométricos para crianças menores de cinco anos, como baixo peso para altura (BPA), baixo peso para a idade (BPI) e baixa altura para a idade (BAI), em termos percentuais por município. Dados socioeconômicos do CadÚnico foram obtidos via web scraping pela plataforma [CECAD](https://cecad.cidadania.gov.br/tab_cad.php).
 
