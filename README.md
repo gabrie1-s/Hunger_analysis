@@ -15,6 +15,319 @@ As implementações dos modelos utilizados estão no diretório `Prediction and 
 ### Obtensão dos dados
 Foram extraídos do [SISVAN](https://sisaps.saude.gov.br/sisvan/relatoriopublico/index) indicadores antropométricos para crianças menores de cinco anos, como baixo peso para altura (BPA), baixo peso para a idade (BPI) e baixa altura para a idade (BAI), em termos percentuais por município. Dados socioeconômicos do CadÚnico foram obtidos via web scraping pela plataforma [CECAD](https://cecad.cidadania.gov.br/tab_cad.php).
 
+### Variáveis do banco de dados CECAD
+
+- Estado cadastral da família
+   - Sem Registro Civil
+   - Cadastrado
+
+- Faixa da renda total da família
+   - Até 1 S.M.
+   - Entre 1 e 2 S.M.
+   - Entre 2 e 3 S.M.
+   - Acima de 3 S.M.
+
+- Faixa da renda familiar per capita
+   - Pobreza 1 (até R$ 109)
+   - Pobreza 2 (de R$ 109 a R$ 218)
+   - Baixa Renda
+   - Acima de 1
+
+- Forma de coleta
+   - Informação migrada como inexistente
+   - Sem visita Domiciliar
+   - Com visita domiciliar
+
+- Número de meses após a última atualização cadastral
+   - até 12 Meses
+   - 13 a 18 Meses
+   - 19 a 24 Meses
+   - 25 a 36 Meses
+   - 37 a 48 Meses
+   - acima de 48 Meses
+
+- Recebe PBF família
+   - Não
+   - Sim
+   - Não.1
+   - Sim.1
+
+- Calçamento em frente ao seu domicílio
+   - Total
+   - Parcial
+   - Não existe
+
+- Situação do domicílio
+   - Urbanas
+   - Rurais
+
+- Espécie do domicílio
+   - Particular Permanente
+   - Particular improvisado
+   - Coletivo
+
+- Existência de banheiro
+    - Sim
+    - Não
+
+- Forma de abastecimento de água
+    - Rede geral de distribuição
+    - Poço ou nascente
+    - Cisterna
+    - Outra forma
+
+- Forma de coleta do lixo
+    - É coletado diretamente
+    - É coletado indiretamente
+    - É queimado ou enterrado na propriedade
+    - É jogado em terreno baldio ou logradouro (rua, avenida, etc.)
+    - É jogado em rio ou mar
+    - Tem outro destino
+
+- Forma de escoamento sanitário
+    - Rede coletora de esgoto ou pluvial
+    - Fossa séptica
+    - Fossa rudimentar
+    - Vala a céu aberto
+    - Direto para um rio, lago ou mar
+    - Outra forma
+
+- Material predominante nas paredes externas do domicílio
+    - Alvenaria
+    - Madeira aparelhada
+    - Taipa revestida
+    - Taipa não revestida
+    - Madeira aproveitada
+    - Palha
+    - Outro Material
+
+- Material predominante no piso do domicílio
+    - Terra
+    - Cimento
+    - Madeira aproveitada
+    - Madeira aparelhada
+    - Cerâmica, lajota ou pedra
+    - Carpete
+    - Outro Material
+
+- Água canalizada no domicílio
+    - Sim
+    - Não
+
+- Tipo de iluminação
+    - Elétrica com medidor próprio
+    - Elétrica com medidor comunitário
+    - Elétrica sem medidor
+    - Óleo, querosene ou gás
+    - Vela
+    - Outra forma
+
+- Família Indígena
+    - Sim
+    - Não
+
+- Família quilombola
+    - Sim
+    - Não
+
+- Cor ou raça
+    - Branca
+    - Preta
+    - Amarela
+    - Parda
+    - Indígena
+
+- Estado cadastral da pessoa
+    - Sem Registro Civil
+    - Cadastrado
+    - Aguardando NIS
+    - Validando NIS
+
+- Faixa etária
+    - Entre 0 e 4
+    - Entre 5 a 6
+    - Entre 7 a 15
+    - Entre 16 a 17
+    - Entre 18 a 24
+    - Entre 25 a 34
+    - Entre 35 a 39
+    - Entre 40 a 44
+    - Entre 45 a 49
+    - Entre 50 a 54
+    - Entre 55 a 59
+    - Entre 60 a 64
+    - Maior que 65
+
+- Relação de parentesco com o responsável familiar
+    - Pessoa Responsável pela Unidade Familiar - RF
+    - Cônjuge ou companheiro(a)
+    - Filho(a)
+    - Enteado(a)
+    - Neto(a) ou bisneto(a)
+    - Pai ou mãe
+    - Sogro(a)
+    - Irmão ou irmã
+    - Genro ou nora
+    - Outro parente
+    - Não parente
+
+- Sexo
+    - Masculino
+    - Feminino
+
+- Pessoa com marcação de trabalho infantil
+    - Sim
+    - Não
+
+- Recebe ajuda de cuidador especializado
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Recebe ajuda de alguém da família
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Recebe ajuda de instituição
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Não recebe ajuda de terceiros
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Recebe ajuda de outra forma
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Recebe ajuda de vizinho
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Cegueira
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Síndrome de Down
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Deficiência física
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Deficiência mental ou intelectual
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Surdez leve
+    - moderada
+
+- Surdez severa
+    - profunda
+
+- Transtorno
+    - doença mental
+
+- Baixa visão
+    - Opção não marcada no formulário
+    - Opção marcada no formulário
+
+- Pessoa tem deficiência?
+    - Sim
+    - Não
+
+- Ano e série do curso que a pessoa frequenta
+    - Primeiro(a)
+    - Segundo(a)
+    - Terceiro(a)
+    - Quarto(a)
+    - Quinto(a)
+    - Sexto(a)
+    - Sétimo(a)
+    - Oitavo(a)
+    - Nono(a)
+    - Curso não-seriado
+
+- A pessoa concluiu o curso?
+    - Sim
+    - Não
+
+- Curso mais elevado que a pessoa frequentou
+    - Creche
+    - Pré-escola (exceto CA)
+    - Classe de Alfabetização - CA
+    - Ensino Fundamental 1ª a 4ª séries...
+    - Nenhum
+
+- Curso que a pessoa frequenta
+    - Creche
+    - Pré-escola (exceto CA)
+    - Classe de Alfabetização - CA
+    - Ensino Fundamental regular (duração 8 anos)
+    - Pré-vestibular
+
+- Grau de instrução
+    - Sem instrução
+    - Fundamental incompleto
+    - Fundamental completo
+    - Médio incompleto
+    - Médio completo
+    - Superior incompleto ou mais
+
+- Pessoa frequenta escola
+    - Sim, rede pública
+    - Sim, rede particular
+    - Não, já frequentou
+    - Nunca frequentou
+
+- Pessoa sabe ler e escrever
+    - Sim
+    - Não
+
+- Último ano e série do curso que a pessoa frequentou
+    - Primeiro(a)
+    - Segundo(a)
+    - Terceiro(a)
+    - Quarto(a)
+    - Quinto(a)
+    - Curso não-seriado
+
+- Atividade extrativista
+    - Sim
+    - Não
+
+- Função principal
+    - Trabalhador por conta própria
+    - Trabalhador temporário em área rural
+    - Empregado sem carteira
+    - Empregado com carteira
+    - Estagiário
+    - Aprendiz
+
+- Pessoa estava afastada na semana passada?
+    - Sim
+    - Não
+
+- Trabalho remunerado nos últimos 12 meses
+    - Sim
+    - Não
+
+- Pessoa trabalhou na semana passada?
+    - Sim
+    - Não
+
+- Grupos Populacionais Tradicionais e Específicos
+    - Famlia Cigana
+    - Familia Extrativista
+    - Familia de Pescadores Artesanais
+    - Familia Ribeirinha
+    - Nenhuma
+
+- Situação de Rua
+    - Não
+    - Sim
+
+
 ### Pré-processamento
 O conjunto de dados foi dividido em treino e teste, com o estado do Ceará (184 municípios) sendo usado exclusivamente para teste, visando avaliar a generalização do modelo para municípiod de um estado desconhecido. Em seguida, selecionaram-se variáveis relevantes para cada modelo por meio do Boruta-SHAP. Modelos baseados em árvores foram priorizados, devido à sua eficácia em dados tabulares.
 
