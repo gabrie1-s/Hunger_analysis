@@ -13,8 +13,8 @@ As implementações dos modelos utilizados estão no diretório `Prediction and 
 ## Metodologia
 
 <p align="center">
-  <b>Sumarização das etapas da metodologia proposta</b><br>
-  <img src="imgs/block_diagram.png" width="1000"/>
+  <img src="imgs/block_diagram.png" width="1000"/><br>
+  <b>Fig. 1: Sumarização das etapas da metodologia proposta</b>
 </p>
 
 ### Obtensão dos dados
