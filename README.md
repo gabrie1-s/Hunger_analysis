@@ -509,6 +509,62 @@ A tabela acima apresenta o RMSE médio e o desvio padrão (após o $\pm$) dos me
   </table>
 </div>
 
+
+A Tabela abaixo mostra, em termos percentuais, a importância de cada variável preditiva para o processo de regressão, por meio do SHAP. Além disso, a coluna “Correlação” contém o valor da correlação de Spearman entre cada preditor e variável alvo.
+
+<table>
+  <thead>
+    <tr>
+      <th>Indicador</th>
+      <th>Variável</th>
+      <th style="text-align:right;">Importância</th>
+      <th style="text-align:right;">Correlação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="17"><strong>BAI</strong></td>
+      <td>Faixa etária / Entre 18 a 24</td><td style="text-align:right;">11,24%</td><td style="text-align:right;">0,418</td>
+    </tr>
+    <tr><td>Faixa etária / Entre 55 a 59</td><td style="text-align:right;">10,43%</td><td style="text-align:right;">-0,235</td></tr>
+    <tr><td>Faixa da renda total da família / Até 1 Salário Mínimo</td><td style="text-align:right;">10,07%</td><td style="text-align:right;">0,42</td></tr>
+    <tr><td>Curso que a pessoa frequenta / Ensino Fundamental regular (duração 9 anos)</td><td style="text-align:right;">8,29%</td><td style="text-align:right;">0,23</td></tr>
+    <tr><td>Recebe Programa Bolsa Família / Sim</td><td style="text-align:right;">8,28%</td><td style="text-align:right;">0,428</td></tr>
+    <tr><td>Cor ou raça / Branca</td><td style="text-align:right;">8,25%</td><td style="text-align:right;">-0,41</td></tr>
+    <tr><td>Água canalizada no domicílio / Não</td><td style="text-align:right;">6,79%</td><td style="text-align:right;">0,383</td></tr>
+    <tr><td>Faixa etária / Entre 7 a 15</td><td style="text-align:right;">6,65%</td><td style="text-align:right;">0,247</td></tr>
+    <tr><td>Material predominante no piso do domicílio / Terra</td><td style="text-align:right;">5,83%</td><td style="text-align:right;">0,374</td></tr>
+    <tr><td>Relação de parentesco com o responsável familiar / Pessoa Responsável pela Unidade Familiar - RF</td><td style="text-align:right;">4,23%</td><td style="text-align:right;">0,042</td></tr>
+    <tr><td>Faixa etária / Entre 0 e 4</td><td style="text-align:right;">4,03%</td><td style="text-align:right;">0,226</td></tr>
+    <tr><td>Relação de parentesco com o responsável familiar / Cônjuge ou companheiro(a)</td><td style="text-align:right;">2,72%</td><td style="text-align:right;">-0,265</td></tr>
+    <tr><td>Curso mais elevado que a pessoa frequentou / Ensino Fundamental (duração 9 anos)</td><td style="text-align:right;">2,68%</td><td style="text-align:right;">0,232</td></tr>
+    <tr><td>Faixa etária / Entre 35 a 39</td><td style="text-align:right;">2,4%</td><td style="text-align:right;">0</td></tr>
+    <tr><td>Função principal / Empregado sem carteira de trabalho assinada</td><td style="text-align:right;">2,26%</td><td style="text-align:right;">-0,16</td></tr>
+    <tr><td>Curso mais elevado que a pessoa frequentou / Ensino Médio, 2º grau, Médio 2º ciclo (Científico, Clássico, Técnico, Normal)</td><td style="text-align:right;">2,08%</td><td style="text-align:right;">-0,05</td></tr>
+    <tr><td>Curso mais elevado que a pessoa frequentou / Ensino Fundamental EJA - séries iniciais (Supletivo 1ª a 4ª)</td><td style="text-align:right;">1,69%</td><td style="text-align:right;">0,1</td></tr>
+    <tr>
+      <td rowspan="5"><strong>BPA</strong></td>
+      <td>Material predominante nas paredes externas do domicílio / Taipa não revestida</td><td style="text-align:right;">21,5%</td><td style="text-align:right;">0,318</td>
+    </tr>
+    <tr><td>Cor ou raça / Preta</td><td style="text-align:right;">20,5%</td><td style="text-align:right;">0,126</td></tr>
+    <tr><td>Cor ou raça / Parda</td><td style="text-align:right;">19,58%</td><td style="text-align:right;">0,439</td></tr>
+    <tr><td>Cor ou raça / Branca</td><td style="text-align:right;">19,33%</td><td style="text-align:right;">-0,457</td></tr>
+    <tr><td>Material predominante nas paredes externas do domicílio / Madeira aparelhada</td><td style="text-align:right;">19,08%</td><td style="text-align:right;">-0,165</td></tr>
+    <tr>
+      <td rowspan="8"><strong>BPI</strong></td>
+      <td>Cor ou raça / Branca</td><td style="text-align:right;">20,17%</td><td style="text-align:right;">-0,38</td>
+    </tr>
+    <tr><td>Cor ou raça / Preta</td><td style="text-align:right;">16,25%</td><td style="text-align:right;">0,083</td></tr>
+    <tr><td>Material predominante no piso do domicílio / Terra</td><td style="text-align:right;">16,08%</td><td style="text-align:right;">0,30</td></tr>
+    <tr><td>Função principal / Empregado com carteira de trabalho assinada</td><td style="text-align:right;">14,75%</td><td style="text-align:right;">-0,286</td></tr>
+    <tr><td>Forma de escoamento sanitário / Vala a céu aberto</td><td style="text-align:right;">10,33%</td><td style="text-align:right;">0,237</td></tr>
+    <tr><td>Faixa etária / Entre 16 a 17</td><td style="text-align:right;">9,75%</td><td style="text-align:right;">0,274</td></tr>
+    <tr><td>Função principal / Empregado sem carteira de trabalho assinada</td><td style="text-align:right;">6,58%</td><td style="text-align:right;">-0,137</td></tr>
+    <tr><td>Função principal / Militar ou servidor público</td><td style="text-align:right;">6,08%</td><td style="text-align:right;">0,014</td></tr>
+  </tbody>
+</table>
+
+
 <!-- Também fizemos mapas que mostram os indicadores reais e os preditos para todos os municípios do conjunto de teste (do estado do Ceará).
 
 <p align="center">
