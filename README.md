@@ -513,6 +513,9 @@ A tabela acima apresenta o RMSE médio e o desvio padrão (após o $\pm$) dos me
 A Tabela abaixo mostra, em termos percentuais, a importância de cada variável preditiva para o processo de regressão, por meio do SHAP. Além disso, a coluna “Correlação” contém o valor da correlação de Spearman entre cada preditor e variável alvo.
 
 <table>
+    <caption style="text-align:center; caption-side: top">
+      Relevância das variáveis preditivas
+    </caption>
   <thead>
     <tr>
       <th>Indicador</th>
